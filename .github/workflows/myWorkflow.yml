@@ -4,7 +4,11 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - name: install node.js
+        uses: actions/setup-node@v2
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: intall npm deps
+        run: npm ci
       - name: make lint
         run: make lint
