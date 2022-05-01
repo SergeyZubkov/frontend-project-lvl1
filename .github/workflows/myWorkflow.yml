@@ -1,0 +1,7 @@
+name: my workflow
+on: push
+jobs:
+  Lint
+    runs-on: ubuntu-lates
+    steps:
+      run: make lint
