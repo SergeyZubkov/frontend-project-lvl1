@@ -1,14 +1,14 @@
 import readlineSync from 'readline-sync';
 
 const cmd = {
-  getPlayerName: () => readlineSync.question('May I have your playerName?\n'),
+  getPlayerName: () => readlineSync.question('May I have your name?\n'),
   getUserAnswer: (number) => readlineSync.question(`Question: ${number}\n`),
   greetings: (playerName) => console.log(`Hello, ${playerName}`),
   showUserAnswer: (userAnswer) => console.log(`Your answer: ${userAnswer}`),
   showCorrect: () => console.log('Correct!'),
-  showWrong: (userAnswer, rightAnswer, playerName) => console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.
-                                     Let's try again, ${playerName}`),
+  showWrong: (userAnswer, rightAnswer, playerName) => console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}. Let's try again, ${playerName}`),
   showCongratulations: (playerName) => console.log(`Congratulations, ${playerName}`),
+  showRules: () => console.log('Answer "yes" if the number is even, otherwise answer "no".'),
 };
 
 const getRandomNumber = () => Math.round(Math.random() * 100);
@@ -23,6 +23,7 @@ function evenGame() {
   const playerName = cmd.getPlayerName();
 
   cmd.greetings(playerName);
+  cmd.showRules();
 
   let rightAnswerSeries = 0;
 
