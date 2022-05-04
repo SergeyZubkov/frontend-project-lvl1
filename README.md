@@ -5,4 +5,7 @@
 
 ![example workflow](https://github.com/SergeyZubkov/frontend-project-lvl1/actions/workflows/myWorkflow.yml/badge.svg)
 
+####Even game:
 [package install and usage](https://asciinema.org/a/0i3XShuVujOkMlvgY4byjY4ft)
+####Calc game:
+[package install and usage](https://asciinema.org/a/rF5gnrAZNKFDxSADayQ7JDNl1)
