@@ -2,4 +2,4 @@
 
 import games from '../src/index.js';
 
-games.calculation();
+games.gcd();

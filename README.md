@@ -9,3 +9,5 @@
 [package install and usage](https://asciinema.org/a/0i3XShuVujOkMlvgY4byjY4ft)
 ####Calc game:
 [package install and usage](https://asciinema.org/a/rF5gnrAZNKFDxSADayQ7JDNl1)
+####GCD game:
+[package install and usage](https://asciinema.org/a/azznc1dVMn5dkRYGYTXieWJ7g)

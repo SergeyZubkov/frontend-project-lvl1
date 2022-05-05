@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import evenRules from './games/even.js';
 import calculationRules from './games/calculation.js';
+import gcdRules from './games/gcd.js';
 import END_GAME_WITH_LOSE from './games/cons.js';
 
 const cl = {
@@ -48,6 +49,7 @@ function game(rules) {
 const games = {
   even: () => game(evenRules),
   calculation: () => game(calculationRules),
+  gcd: () => game(gcdRules),
 };
 
 export default games;
