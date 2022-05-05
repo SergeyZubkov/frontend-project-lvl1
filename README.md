@@ -11,3 +11,5 @@
 [package install and usage](https://asciinema.org/a/rF5gnrAZNKFDxSADayQ7JDNl1)
 ####GCD game:
 [package install and usage](https://asciinema.org/a/azznc1dVMn5dkRYGYTXieWJ7g)
+####Progression game:
+[package install and usage](https://asciinema.org/a/jf8pjLAXFD1Nc1UMerSr4CgY2)
