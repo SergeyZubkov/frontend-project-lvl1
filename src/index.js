@@ -3,6 +3,7 @@ import evenRules from './games/even.js';
 import calculationRules from './games/calculation.js';
 import gcdRules from './games/gcd.js';
 import progressionRules from './games/progression.js';
+import primeRules from './games/prime.js';
 import END_GAME_WITH_LOSE from './games/cons.js';
 
 const cl = {
@@ -23,7 +24,9 @@ function game(rules) {
   cl.showRules(rules.text);
 
   const ROUNDS = 3;
-  let currentRound = 1;
+  const START_ROUND = 1;
+
+  let currentRound = START_ROUND;
 
   while (currentRound <= ROUNDS && currentRound !== END_GAME_WITH_LOSE) {
     const { questionVal, rightAnswer } = rules.getTask();
@@ -38,7 +41,7 @@ function game(rules) {
       cl.showCorrect();
     } else {
       const { round } = rules.onWrongAnswer(currentRound);
-      currentRound = round;
+      currentRound = round < START_ROUND ? 0 : round;
 
       cl.showWrong(userAnswer, rightAnswer, playerName);
     }
@@ -52,6 +55,7 @@ const games = {
   even: () => game(evenRules),
   gcd: () => game(gcdRules),
   progression: () => game(progressionRules),
+  prime: () => game(primeRules),
 };
 
 export default games;

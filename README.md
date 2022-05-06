@@ -13,3 +13,5 @@
 [package install and usage](https://asciinema.org/a/azznc1dVMn5dkRYGYTXieWJ7g)
 ####Progression game:
 [package install and usage](https://asciinema.org/a/jf8pjLAXFD1Nc1UMerSr4CgY2)
+####Prime game:
+[package install and usage](https://asciinema.org/a/cDZ4Vxvw1sSF9zVPkrCz7K6ES)
