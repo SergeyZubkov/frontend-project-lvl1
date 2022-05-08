@@ -14,7 +14,7 @@ const cl = {
   showUserAnswer: (userAnswer) => console.log(`Your answer: ${userAnswer}`),
   showCorrect: () => console.log('Correct!'),
   showWrong: (userAnswer, rightAnswer, playerName) => console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}. Let's try again, ${playerName}`),
-  showCongratulations: (playerName) => console.log(`Congratulations, ${playerName}`),
+  showCongratulations: (playerName) => console.log(`Congratulations, ${playerName}!`),
 };
 
 function game(rules) {
