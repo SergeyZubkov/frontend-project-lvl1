@@ -13,7 +13,7 @@ const cl = {
   askUser: (questionVal) => readlineSync.question(`Question: ${questionVal}\n`),
   showUserAnswer: (userAnswer) => console.log(`Your answer: ${userAnswer}`),
   showCorrect: () => console.log('Correct!'),
-  showWrong: (userAnswer, rightAnswer, playerName) => console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}. Let's try again, ${playerName}`),
+  showWrong: (userAnswer, rightAnswer, playerName) => console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}. Let's try again, ${playerName}!`),
   showCongratulations: (playerName) => console.log(`Congratulations, ${playerName}!`),
 };
 
