@@ -1,4 +1,5 @@
 import getRandomIntFromRange from './utils.js';
+import END_GAME_WITH_LOSE from './cons.js';
 
 const getGCD = (number1, number2) => {
   const [biggest, smallest] = number1 > number2 ? [number1, number2] : [number2, number1];
@@ -26,8 +27,8 @@ const gcdRules = {
   onRightAnswer: (currentRound) => ({
     round: currentRound + 1,
   }),
-  onWrongAnswer: (currentRound) => ({
-    round: currentRound - 1,
+  onWrongAnswer: () => ({
+    round: END_GAME_WITH_LOSE,
   }),
 };
 
