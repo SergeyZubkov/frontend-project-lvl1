@@ -1,4 +1,5 @@
 import getRandomIntFromRange from './utils.js';
+import END_GAME_WITH_LOSE from './cons.js';
 
 const isEven = (number) => number % 2 === 0;
 
@@ -21,7 +22,7 @@ const evenRules = {
     round: currentRound + 1,
   }),
   onWrongAnswer: () => ({
-    round: 1,
+    round: END_GAME_WITH_LOSE,
   }),
 };
 
