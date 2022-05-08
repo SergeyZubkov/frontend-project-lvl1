@@ -1,4 +1,5 @@
 import getRandomIntFromRange from './utils.js';
+import END_GAME_WITH_LOSE from './cons.js';
 
 function isPrime(number) {
   for (let i = 2, s = Math.sqrt(number); i <= s; i += 1) {
@@ -21,8 +22,8 @@ const primeRules = {
   onRightAnswer: (currentRound) => ({
     round: currentRound + 1,
   }),
-  onWrongAnswer: (currentRound) => ({
-    round: currentRound - 1,
+  onWrongAnswer: () => ({
+    round: END_GAME_WITH_LOSE,
   }),
 };
 
